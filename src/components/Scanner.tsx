@@ -1,4 +1,4 @@
-import { CameraDevice, Html5Qrcode } from "html5-qrcode";
+import { Html5Qrcode } from "html5-qrcode";
 import { useEffect, useState } from "react";
 import { Corners } from "./Corners";
 import { isJson } from "../helper/isJson";

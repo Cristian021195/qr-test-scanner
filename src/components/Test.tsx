@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface IProps {
     name:string,
     fn: (v:string)=>void

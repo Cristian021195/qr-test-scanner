@@ -1,8 +1,5 @@
 import { useState } from "react"
 import { Scanner } from './components/Scanner';
-import { Test } from "./components/Test";
-import { QRS } from "./components/QRS";
-import { Corners } from "./components/Corners";
 
 function App() {
   const [msg, setMsg] = useState<string|unknown>("");
