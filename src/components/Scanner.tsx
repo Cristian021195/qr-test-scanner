@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import { Corners } from "./Corners";
 import { isJson } from "../helper/isJson";
 
-interface IScanner {
+/*interface IScanner {
     fn: (v:string|unknown)=>void
-}
+}*/
 
-export const Scanner = ({fn}:IScanner) => {
+export const Scanner = () => {//{fn}:IScanner
     //let html5QrCode = null; let cameraId = null;
     const [cameraId, setCameraId] = useState<string | null>(null);
     const [html5QrCode, setHtml5QrCode] = useState<Html5Qrcode | null>(null);
