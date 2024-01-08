@@ -1,6 +1,6 @@
 import { Html5Qrcode } from "html5-qrcode";
 import { useEffect, useState } from "react";
-import { Corners } from "./Corners";
+import { Corners } from './Corners';
 import { isJson } from "../helper/isJson";
 
 /*interface IScanner {
@@ -33,10 +33,11 @@ export const Scanner = () => {//{fn}:IScanner
     function start(){
         if(html5QrCode !== null && cameraId !== null){
             html5QrCode.start(
-                cameraId,
+                //cameraId,
+                {facingMode:"environment"},
                 {
                 fps: 5,    // Optional, frame per seconds for qr code scanning
-                qrbox: { width: 250, height: 250 },  // Optional, if you want bounded box UI
+                qrbox: { width: 250, height: 250 }  // Optional, if you want bounded box UI
                 },
                 (decodedText, decodedResult) => {
                 console.log({decodedText,decodedResult})
